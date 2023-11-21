@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+:root{
+    /* colors */
+    --bg-clr: #121723;
+    --secondary-clr: #314158;
+    --accent-clr: #463EE1;
+
+    /* txt colors */
+    --txt-main-clr: #fff;
+    --txt-secondary-clr:rgb(192, 192, 192);
+
+    /* font familt */
+    --ff: 'Roboto', sans-serif;
+
+    /* font weights */
+    --fw-light: 300;
+    --fw-reg: 400;
+    --fw-heavy: 500;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+
+body{
+    font-family: var(--ff);
+    background-color: var(--bg-clr);
+}
+
+
+/* header */
+
+.header{
+    padding: 15px;
+    letter-spacing: 1px;
+}
+
+.logo{
+    color: var(--txt-secondary-clr);
+    font-weight: var(--fw-reg);
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar li:not(:last-child){
+    margin-right: 25px;
+}
+
+.nav_link {
+    display: block;
+    text-decoration: none;
+    color: var(--txt-main-clr);
+    transition: 300ms;
+  }
+
+  .nav_link:hover{
+    scale: 1.1;
+  }
+
+
+
+/* mobile menu */
+.hamburger {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    cursor: pointer;
+    z-index: 9999;
+    color: #ab2b36;
+    }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--txt-main-clr);
+  }
+/* hero */
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 55px auto;
+    color: var(--txt-main-clr);
+}
+
+.heading{
+    font-size: 42px;
+}
+
+.sub_heading{
+    font-size: 22px;
+    color: var(--txt-secondary-clr);
+    margin: 10px 0;
+}
+
+.intro{
+    font-size: 17px;
+    color: var(--txt-secondary-clr);
+    margin-bottom: 10px;
+}
+
+span{
+    color: var(--accent-clr);
+}
+
+.btn{
+    display: inline-block;
+    padding: 1em;
+    border: none;
+    outline: none;
+    color: var(--txt-main-clr);
+    background: var(--accent-clr);
+    font-size: 17px;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+.secondary_btn{
+    background: transparent;
+    border: 1px solid var(--secondary-clr);
+}
+
+.btn:hover{
+    background-color: var(--secondary-clr);
+}
+
+.btn:active{
+    transform: translateY(px);
+}
+
+@media screen and (max-width: 1050px) {
+    /* modile nav */
+
+    .nav{
+        margin: 0 35px;
+    }
+    
+    .navbar {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--secondary-clr);
+      height: 100vh;
+      width: clamp(200px, 60%, 400px);
+      transition: 300ms ease-in-out;
+    }
+
+    .navbar.active{
+        right: 0;
+    }
+  
+    .navbar.gutter{
+      margin: 0;
+    }
+  
+    .navbar.active {
+      right: 0;
+    }
+  
+    .header {
+      flex-direction: column;
+    }
+  
+    .nav_link {
+      padding: 25px 0;
+      color: var(--txt-main-clr);
+      font-size: 24px;
+    }
+
+    .navbar li:not(:last-child){
+        margin-right: 0px;
+    }
+    
+  
+
+    .hamburger {
+      display: block;
+      position: absolute;
+      top: 16px;
+      right: 10%;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+      }
+    
+      .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+    
+      .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+
+
+      .hero{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 1100px;
+        margin: 20px auto;
+        color: var(--txt-main-clr);
+    }
+
+    .container{
+        margin: 50px 0;
+    }
+}
+
