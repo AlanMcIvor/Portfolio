@@ -33,7 +33,7 @@
 
     <!-- hero -->
 
-    <section class="hero">
+    <section id="hero">
         <div class="container">
 
             <h1 class="heading">Hi, I'm <span>Alan</span></h1>
@@ -51,8 +51,8 @@
         </div>
     </section>
 
-    <section class="work">
-        <div class="work_intro">
+    <section id="work">
+        <div class="intro">
             <span class="icon"><box-icon name='code-alt' size="lg" color="#463EE1"></box-icon></span>
             <h2>My Work</h2>
         </div>
@@ -61,7 +61,7 @@
             <div class="card">
                 <img src="assets/weather_app.png" alt="" class="card_img">
                 <div class="text_on_hover">
-                    <h3>ClimaCast</h3>
+                    <h3>Weather App</h3>
                     <p>A weather app that access the OpenWeather Api and returns <br />
                     results based upon what the user enters.</p>
                     <p class="tech">HTML, CSS, JavaScript, API</p>
@@ -85,6 +85,82 @@
                     delete tasks. Uses local storage</p>
                     <p class="tech">HTML, CSS, JavaScript</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="intro">
+            <span class="icon"><box-icon name='cog' size="lg" color="#463EE1"></box-icon></span>
+            <h2>Skills</h2>
+        </div>
+
+        <div class="skills_container">
+            <div class="skill_group">
+                <div class="skill">
+                    <box-icon type='logo' name='html5' color="#413acf" size="lg"></box-icon>
+                    <p>HTML</p>
+                </div>
+        
+                <div class="skill">
+                    <box-icon type='logo' name='css3' color="#413acf" size="lg"></box-icon>
+                    <p>CSS</p>
+                </div>
+            
+                <div class="skill">
+                    <box-icon type='logo' name='javascript' color="#413acf" size="lg"></box-icon>
+                    <p>JavaScript</p>
+                </div>
+            </div>
+
+            <div class="skill_group">
+                <div class="skill">
+                    <box-icon type='logo' name='git' color="#413acf" size="lg"></box-icon>
+                    <p>Git</p>
+                </div>
+        
+                <div class="skill">
+                    <box-icon type='logo' name='tailwind-css' color="#413acf" size="lg"></box-icon>
+                    <p>tailwind-css</p>
+                </div>
+            
+                <div class="skill">
+                    <box-icon type='logo' name='php' color="#413acf" size="lg"></box-icon>
+                    <p>PHP</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="intro">
+            <span class="icon"><box-icon name='envelope' size="lg" color="#463EE1"></box-icon></span>
+            <h2>Contact</h2>
+        </div>
+        
+        <div class="contact_container">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.9167421734337!2d-4.192661422882079!3d55.812045787426115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488840dc5e5a4b4f%3A0x6ab0bb76dd760282!2sWarriston%20Way%2C%20Rutherglen%2C%20Glasgow%20G73%205JD!5e0!3m2!1sen!2suk!4v1701272927578!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="form_container">
+                <h3>Get in touch</h3>
+                <p>If you have a query, want to discuss a potential project, or simply want to say hello, I'm just a message away. Feel free to reach out using the form below, and let's turn your ideas into exceptional digital experiences!</p>
+                <form>
+                    <div class="form_group">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="comment">Comments:</label>
+                        <textarea name="comments" id="comments" cols="50" rows="20"></textarea>
+                    </div>
+                    <input type="submit" class="btn submit_btn">
+                </form>
             </div>
         </div>
     </section>
