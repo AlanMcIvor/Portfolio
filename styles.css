@@ -27,6 +27,10 @@
     box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 section{
   margin: 150px 0;
 }
@@ -47,6 +51,10 @@ body{
 .header{
     padding: 15px;
     letter-spacing: 1px;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-clr);
+    z-index: 999;
 }
 
 .logo{
@@ -64,6 +72,7 @@ body{
 
 .navbar{
     display: flex;
+    align-items: center;
 }
 
 .navbar li{
@@ -119,6 +128,10 @@ body{
     color: var(--txt-main-clr);
 }
 
+.hide_bg{
+  display: none;
+}
+
 .heading{
     font-size: 42px;
 }
@@ -138,6 +151,10 @@ body{
 span{
     color: var(--accent-clr);
 }
+.btn_container{
+  display: flex;
+  gap: 15px;
+}
 
 .btn{
     display: inline-block;
@@ -151,8 +168,13 @@ span{
     transition: 300ms ease-in-out;
 }
 .secondary_btn{
+    display: flex;
+    align-items: center;
     background: transparent;
     border: 1px solid var(--secondary-clr);
+}
+.btn_icon{
+  margin: 0 5px;
 }
 
 .btn:hover{
@@ -395,7 +417,7 @@ input{
       }
 
 
-      .hero{
+      #hero{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -406,8 +428,35 @@ input{
         color: var(--txt-main-clr);
     }
 
+    .btn_container{
+      justify-content: center;
+    }
+
     .container{
         margin: 50px 0;
     }
+
+ 
+    .skill{
+      max-width: 350px;
+    }
+    .contact_container{
+      margin: auto;
+      text-align: center;
+    }
+
+    .form_container{
+      margin: auto;
+    }
+}
+
+@media screen and (max-width: 445px){
+  .img_container{
+    display: none;
+  }
+
+  .skill{
+    max-width: 250px;
+  }
 }
 
