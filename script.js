@@ -8,7 +8,7 @@ const mobileBg = document.querySelector(".mobile_bg");
 
 
 
-// event listener
+// hamburger click event
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
@@ -21,7 +21,7 @@ hamburger.addEventListener("click", () => {
 window.addEventListener('resize', () => {
 
     let width = window.innerWidth;
-    console.log(width)
+    // console.log(width)
 
     if (width <= 1051){
         desktopBg.classList.add("hide_bg");

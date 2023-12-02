@@ -126,6 +126,13 @@ body{
     color: var(--txt-main-clr);
 }
 
+.head_intro{
+  color: var(--txt-secondary-clr);
+  font-weight: var(--fw-reg);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
 .hide_bg{
   display: none;
 }
@@ -186,7 +193,7 @@ span{
 
 /* work */
 
-.work_intro{
+.intro{
   color: var(--txt-secondary-clr);
   font-weight: var(--fw-reg);
   font-size: 1.2rem;
