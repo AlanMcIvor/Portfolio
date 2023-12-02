@@ -450,6 +450,24 @@ input{
     }
 }
 
+@media screen and (max-width: 600px) {
+  .heading{
+    font-size: 26px;
+  }
+
+  .sub_heading{
+    font-size: 18px;
+  }
+
+  .intro{
+    font-size: 14px;
+  }
+
+  .container{
+    margin: 15px;
+  }
+}
+
 @media screen and (max-width: 445px){
   .img_container{
     display: none;
