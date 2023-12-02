@@ -144,6 +144,7 @@ body{
     font-size: 17px;
     color: var(--txt-secondary-clr);
     margin-bottom: 40px;
+
 }
 
 span{
@@ -185,7 +186,7 @@ span{
 
 /* work */
 
-.intro{
+.work_intro{
   color: var(--txt-secondary-clr);
   font-weight: var(--fw-reg);
   font-size: 1.2rem;
