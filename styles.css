@@ -95,13 +95,11 @@ body{
   }
 
 
-
 /* mobile menu */
 .hamburger {
     display: none;
-    position: absolute;
+    position: sticky;
     top: 0;
-    right: 0;
     z-index: 999;
     cursor: pointer;
     z-index: 9999;
@@ -476,5 +474,25 @@ input{
   .skill{
     max-width: 250px;
   }
+
+  #hero{
+    margin: auto;
+  }
+
+.card_container{
+  margin: auto;
+}
+
+#work{
+  margin: 25px 5px;
+}
+
+#skills{
+  margin: 25px 5px;
+}
+
+#contact{
+  margin: 25px 5px;
+}
 }
 
