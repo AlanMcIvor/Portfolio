@@ -53,6 +53,7 @@ html{
     padding: var(--padding);
     font-size: var(--fs-reg);
     position: fixed;
+    background: var(--accent);
 }
 
 .nav_container{
@@ -256,6 +257,10 @@ html{
 
     .social{
     justify-content: center;
+  }
+
+    .section_title{
+    width: 350px;
   }
 
 
