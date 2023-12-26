@@ -21,8 +21,8 @@
     --max-wd: 1500px;
 
     /* font size */
-    --fs-large: 3rem; /*48px*/
-    --fs-reg: 1.5rem; /*24px*/
+    --fs-large: 2.8rem; 
+    --fs-reg: 1.3rem; 
 }
 
 /* reset */
@@ -119,7 +119,6 @@ html{
 .intro{
     font-size: var(--fs-large);
     margin-bottom: 15px;
-    padding: var(--padding);
     border-radius: 5px;
 }
 
@@ -240,23 +239,31 @@ html{
     justify-items: center;
     grid-auto-flow: row;
     max-width: 1250px;
-    margin: auto;
+    margin: 50px auto;
+    padding: 15px;
   }
 
   .work_card{
     max-width: 300px;
-  }
-
-  .work_card:first-child{
-    margin-left: 15px;
-  }
-
-    .work_card:last-child{
-    margin-right: 15px;
+    overflow: hidden;
   }
 
   .work_img{
     max-width: 100%;
+    display: block;
+    height: auto;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+  }
+
+  .work_img:hover{
+    transform: scale(1.2);
+
+  }
+
+  .work_img img{
+   overflow-clip-margin: content-box;
+   overflow: clip;
   }
 
 /* 1000px screens and smaller */
