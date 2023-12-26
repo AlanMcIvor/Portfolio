@@ -53,7 +53,6 @@ html{
     padding: var(--padding);
     font-size: var(--fs-reg);
     position: fixed;
-    background: var(--accent);
 }
 
 .nav_container{
@@ -131,7 +130,7 @@ html{
 
 .hamburger {
     position: fixed;
-    right: 50px;
+    right: 30px;
     top: 32px;
     cursor: pointer;
     z-index: 9999;
@@ -202,6 +201,7 @@ html{
     -webkit-box-shadow: 21px 25px 5px 0px rgba(26, 31, 75, 1);
   -moz-box-shadow: 21px 25px 5px 0px rgba(26, 31, 75, 1);
   box-shadow: 21px 25px 5px 0px rgba(26, 31, 75, 1);
+  margin-bottom: 50px;
   }
 
   .social{
@@ -222,6 +222,34 @@ html{
 
   .about_text{
     margin-bottom: 20px;
+  }
+
+  /* work */
+
+  .work_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 45px;
+    justify-items: center;
+    grid-auto-flow: row;
+    max-width: 1250px;
+    margin: auto;
+  }
+
+  .work_card{
+    max-width: 300px;
+  }
+
+  .work_card:first-child{
+    margin-left: 15px;
+  }
+
+    .work_card:last-child{
+    margin-right: 15px;
+  }
+
+  .work_img{
+    max-width: 100%;
   }
 
 /* 1000px screens and smaller */
