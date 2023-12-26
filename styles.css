@@ -266,6 +266,31 @@ html{
    overflow: clip;
   }
 
+  /* contact */
+  .form_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    width: 500px;
+    margin: 50px auto;
+    border-radius: 5px;
+    background-color: var(--accent);
+  }
+ 
+  .form_group{
+    margin-bottom: 10px;
+  }
+
+  label{
+    display: block;
+  }
+
+  input[type="text"],  input[type="email"], textarea{
+    padding: 5px;
+    width: 100%;
+  }
+
 /* 1000px screens and smaller */
 @media screen and (max-width: 1000px){
     .navbar{
@@ -306,5 +331,32 @@ html{
   }
 
 
+}
+
+@media screen and (max-width: 550px) {
+
+    .form_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    width: 300px;
+    margin: 50px auto;
+    border-radius: 5px;
+    background-color: var(--accent);
+  }
+
+    .navbar{
+     position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        right: 0;
+        top: 0;
+        background: var(--accent);
+        min-width: 100%;
+        height: 100vh;
+        right: -100%;
+        transition: all 300ms ease-in-out;
+    }
 }
 
