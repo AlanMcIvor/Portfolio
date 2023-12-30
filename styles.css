@@ -70,7 +70,6 @@ html{
   background-color: #8F3B8D;
 }
 
-
 .nav_link a{
     display: inline-block;
     position: relative;
@@ -205,9 +204,9 @@ html{
   .right{
     max-width: 650px;
     -webkit-box-shadow: 21px 25px 5px 0px rgba(26, 31, 75, 1);
-  -moz-box-shadow: 21px 25px 5px 0px rgba(26, 31, 75, 1);
-  box-shadow: 21px 25px 5px 0px rgba(26, 31, 75, 1);
-  margin-bottom: 50px;
+    -moz-box-shadow: 21px 25px 5px 0px rgba(26, 31, 75, 1);
+    box-shadow: 21px 25px 5px 0px rgba(26, 31, 75, 1);
+    margin-bottom: 50px;
   }
 
   .social{
@@ -291,30 +290,49 @@ html{
     width: 100%;
   }
 
+  /* footer */
+  #footer{
+    background-color: var(--accent);
+    margin: 30px 0 0 0;
+  }
+
+  .footer_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: var(--max-wd);
+    margin: auto;
+    padding: 15px 5px;
+    flex-wrap: wrap;
+    gap: 15px;
+    text-align: center;
+  }
+
+
 /* 1000px screens and smaller */
 @media screen and (max-width: 1000px){
-    .navbar{
-        position: fixed;
-        flex-direction: column;
-        justify-content: center;
-        right: 0;
-        top: 0;
-        background: var(--accent);
-        min-width: 55%;
-        height: 100vh;
-        right: -100%;
-        transition: all 300ms ease-in-out;
-    }
+  .navbar{
+      position: fixed;
+      flex-direction: column;
+      justify-content: center;
+      right: 0;
+      top: 0;
+      background: var(--accent);
+      min-width: 55%;
+      height: 100vh;
+      right: -100%;
+      transition: all 300ms ease-in-out;
+  }
 
     
-    .hamburger {
-        display: block;
-    }
+  .hamburger {
+    display: block;
+  }
 
-    .content_container{
+  .content_container{
     align-items: center;
     text-align: center;
-}
+  }
 
   .about_container{
     flex-direction: column;
@@ -336,27 +354,27 @@ html{
 @media screen and (max-width: 550px) {
 
     .form_container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 25px;
-    width: 300px;
-    margin: 50px auto;
-    border-radius: 5px;
-    background-color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 25px;
+      width: 300px;
+      margin: 50px auto;
+      border-radius: 5px;
+      background-color: var(--accent);
   }
 
     .navbar{
-     position: fixed;
-        flex-direction: column;
-        justify-content: center;
-        right: 0;
-        top: 0;
-        background: var(--accent);
-        min-width: 100%;
-        height: 100vh;
-        right: -100%;
-        transition: all 300ms ease-in-out;
-    }
+      position: fixed;
+      flex-direction: column;
+      justify-content: center;
+      right: 0;
+      top: 0;
+      background: var(--accent);
+      min-width: 100%;
+      height: 100vh;
+      right: -100%;
+      transition: all 300ms ease-in-out;
+  }
 }
 
