@@ -22,6 +22,7 @@
 
     /* font size */
     --fs-large: 2.8rem; 
+    --fs-med: 2rem;
     --fs-reg: 1.3rem; 
 }
 
@@ -301,6 +302,7 @@ html{
   input[type="text"],  input[type="email"], textarea{
     padding: 5px;
     width: 100%;
+    color: black;
   }
 
   /* footer */
@@ -389,6 +391,18 @@ html{
       right: -100%;
       transition: all 300ms ease-in-out;
   }
+
+    .section_title{
+    width: 75%;
+
+  }
+
+  .intro{
+    font-size: var(--fs-med);
+
+
+}
+
 }
 
 /* animations */
