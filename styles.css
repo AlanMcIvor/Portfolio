@@ -282,6 +282,11 @@ html{
    overflow: clip;
   }
 
+  .work_desc{
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
   /* contact */
   .form_container{
     display: flex;
@@ -430,6 +435,7 @@ html{
             display: inline-block;
             white-space: nowrap;
             animation: typing 3s steps(30, end);
+            margin-bottom: 10px;
         }
 
             .cursor {
