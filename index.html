@@ -3,186 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alan McIvor | Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>Alan McIvor | Portfolio</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="nav_container">
-        <span class="logo">Alan McIvor</span>
-        <ul class="navbar">
-          <li class="nav_link"><a href="#hero">Home</a></li>
-          <li class="nav_link"><a href="#about">About</a></li>
-          <li class="nav_link"><a href="#work">Work</a></li>
-          <li class="nav_link"><a href="#contact">Contact</a></li>
+    <header>
+      <nav>
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="aboutMe.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="https://alanmcivoronline.com/">Blogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- mobile menu -->
-    <div class="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-
-    <!-- hero -->
-    <section id="hero">
-      <div class="content_container">
-        <h1 class="intro">
-          Hi, I'm Alan. <br />
-          <div class="typing_container"></div>
-            <span class="typing_text">A web developer</span>
-            <span class="cursor"></span>
-        
-        
-        </h1>
-    <a class="btn hero_btn" href="#contact">Contact</a>
-      </div>
-    </section>
-
-    <!-- about -->
-    <section id="about">
-      <span class="section_title">About</span>
-
-      <div class="about_container">
-        <div class="left">
-          <div class="social">
-            <box-icon type="logo" name="linkedin" color="white"></box-icon>
-            <box-icon type="logo" name="github" color="white"></box-icon>
-            <box-icon
-              type="logo"
-              name="facebook-square"
-              color="white"
-            ></box-icon>
-            <button type="button" class="resumé">Resumé</button>
-          </div>
-          <div class="about_text">
-            <p>
-              Hello there! I'm Alan, A passionate web developer from Glasgow,
-              Scotland. I specilize in creating engaging online spaces for you
-              and your business. My journey is a mix of formal education and
-              self taught. I thrive on the challenges that come with staying at
-              the forefront of this field.
-            </p>
-          </div>
-          <div class="skills">
-            <p>Front-end Development JavaScript VS Code</p>
-            <br />
-            <p>CSS HTML PHP</p>
-            <br />
-            <p>MySql Figma Tailwind Css</p>
-          </div>
-        </div>
-
-        <div class="right">
-          <img
-            src="assets/about_img.png"
-            class="about_img"
-            alt="A person with some paint over there face"
-          />
-        </div>
-      </div>
-    </section>
-    <!-- work -->
-    <section id="work">
-      <span class="section_title">Work</span>
-
-
-      <div class="work_container">
-    
-        <div class="work_card">
-            <a href="https://magical-manatee-3a6b8a.netlify.app/" target="_blank">
-          <img src="assets/jo_smith.png" alt="" class="work_img" />
-            </a>
-            <p class="work_desc">TailwindCss, jQuery</p>
-        </div>
-    
-        <!-- <div class="work_card">
-          <img src="https://unsplash.it/640/425" alt="" class="work_img" />
-        </div>
-
-        <div class="work_card">
-          <img src="https://unsplash.it/640/425" alt="" class="work_img" />
-        </div>
-        <div class="work_card">
-          <img src="https://unsplash.it/640/425" alt="" class="work_img" />
-        </div>
-        <div class="work_card">
-          <img src="https://unsplash.it/640/425" alt="" class="work_img" />
-        </div>
-
-        <div class="work_card">
-          <img src="https://unsplash.it/640/425" alt="" class="work_img" />
-        </div>
-
-        <div class="work_card">
-          <img src="https://unsplash.it/640/425" alt="" class="work_img" />
-        </div>
-
-        <div class="work_card">
-          <img src="https://unsplash.it/640/425" alt="" class="work_img" />
-        </div>
-      </div> -->
-    </section>
-
-    <!-- contact -->
-    <section id="contact">
-      <span class="section_title">Contact</span>
-
-      <div class="form_container">
-        <form action="https://api.web3forms.com/submit" method="post">
-              <input type="hidden" name="access_key" value="580cb4f6-954c-46d9-99ee-eb74bb96d8d2">
-          <div class="form_group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Name:" />
-          </div>
-          <div class="form_group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email:" />
-          </div>
-          <div class="form_group">
-            <label for="name">Comment</label>
-            <textarea
-              name="comment"
-              id="comment"
-              cols="30"
-              rows="10"
-              placeholder="Comment:"
-            ></textarea>
-          </div>
-          <input class="btn" type="submit" />
-        </form>
-      </div>
-    </section>
-
-    <footer id="footer">
-    <div class="footer_container">
-      <address>
-        <p>&copy; 2023 Alan McIvor. All rights reserved.</p>
-        <p>Email: alan.mcivor27@gmail.com</p>
-        <p>Phone: 07914633496</p>
-        <p>Glasgow, Scotland</p>
-      
-      </address>
-      <div class="links">
-          Website:
-          <a href="https://www.alanmcivor.uk" target="_blank"
-            >Portfolio</a
-          >
-        </p>
+    <main class="home_main">
+      <div class="home_text">
+        <h1>Alan McIvor</h1>
+        <h2>Full-Stack <span>Developer</span></h2>
         <p>
-          LinkedIn:
-          <a
-            href="https://www.linkedin.com/in/alan-mcivor1988/"
-            target="_blank"
-            >LinkedIn Profile</a
-          >
+          Welcome to my portfolio! I'm a Full Stack PHP Developer with a passion
+          for crafting dynamic, user-friendly websites and applications. With a
+          strong foundation in both front-end and back-end technologies
         </p>
+        <div class="btn_container">
+          <a class="home_btn" href="projects.html">My Work</a>
+          <a class="home_btn secondary_btn" href="contact.html">Contact Me</a>
         </div>
-    </div>
-    </footer>
+        <div class="social_links">
+          <a href=""><img src="assets/mdi_github.png" alt="" /></a>
+          <a href=""><img src="assets/ri_linkedin-fill.png" alt="" /></a>
+          <a href=""><img src="assets/ic_baseline-email.png" alt="" /></a>
+        </div>
+      </div>
+      <div class="home_img">
+        <img src="assets/home_image.png" alt="" />
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
