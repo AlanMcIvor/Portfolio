@@ -6,42 +6,38 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Alan McIvor | Portfolio</title>
   </head>
-  <body>
+  <body id="home_birds">
     <header>
       <nav>
+        <h1 class="logo">Alan McIvor</h1>
         <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="aboutMe.html">About Me</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="https://alanmcivoronline.com/">Blogs</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="home_main">
-      <div class="home_text">
-        <h1>Alan McIvor</h1>
-        <h2>Full-Stack <span>Developer</span></h2>
+      <div class="main_txt">
+        <h1>Hi, I'm Alan</h1>
         <p>
-          Welcome to my portfolio! I'm a Full Stack PHP Developer with a passion
-          for crafting dynamic, user-friendly websites and applications. With a
-          strong foundation in both front-end and back-end technologies
+          A passionate web developer focused on crafting innovative and
+          user-friendly digital experiences. With a knack for both front-end and
+          back-end development, I bring ideas to life through clean code,
+          responsive design, and modern technologies. Whether building from the
+          ground up or improving existing websites, I aim to create solutions
+          that are not only functional but also visually engaging. Let’s build
+          something great together!
         </p>
-        <div class="btn_container">
-          <a class="home_btn" href="projects.html">My Work</a>
-          <a class="home_btn secondary_btn" href="contact.html">Contact Me</a>
-        </div>
-        <div class="social_links">
-          <a href=""><img src="assets/mdi_github.png" alt="" /></a>
-          <a href=""><img src="assets/ri_linkedin-fill.png" alt="" /></a>
-          <a href=""><img src="assets/ic_baseline-email.png" alt="" /></a>
-        </div>
-      </div>
-      <div class="home_img">
-        <img src="assets/home_image.png" alt="" />
+        <button>My Work</button>
+        <button>Contact Me</button>
       </div>
     </main>
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
+
+    <script src="birds.js"></script>
   </body>
 </html>
