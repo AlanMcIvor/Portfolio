@@ -6,22 +6,27 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Alan McIvor | Portfolio</title>
   </head>
-  <body id="home_birds">
-    <header>
-      <nav>
-        <h1 class="logo">Alan McIvor</h1>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header>
+    <nav>
+      <h1 class="logo">Alan McIvor</h1>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li>
+          <a href="https://alanmcivoronline.com/" target="_blank">Blog</a>
+        </li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <body id="home_net">
     <main class="home_main">
       <div class="main_txt">
-        <h1>Hi, I'm Alan</h1>
+        <h1>
+          Hi, <br />
+          I'm <span>Alan</span>
+        </h1>
         <p>
           A passionate web developer focused on crafting innovative and
           user-friendly digital experiences. With a knack for both front-end and
@@ -32,12 +37,12 @@
           something great together!
         </p>
         <button>My Work</button>
-        <button>Contact Me</button>
+        <button class="secondary_btn">Contact Me</button>
       </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
 
-    <script src="birds.js"></script>
+    <script src="net.js"></script>
   </body>
 </html>

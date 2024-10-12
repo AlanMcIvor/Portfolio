@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
   VANTA.NET({
-    el: "#home_birds",
+    el: "#home_net",
     mouseControls: true,
     touchControls: true,
     gyroControls: false,
