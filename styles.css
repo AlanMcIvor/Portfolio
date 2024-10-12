@@ -106,8 +106,6 @@ button {
 }
 
 .main_txt {
-  background-color: rgba(7, 25, 47, 0.3);
-  backdrop-filter: blur(2px);
   max-width: 60%;
 }
 .main_txt p {
