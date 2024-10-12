@@ -8,8 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
     minWidth: 200.0,
     scale: 1.0,
     scaleMobile: 1.0,
-    color1: 0xc52535,
-    color2: 0xffffff,
-    quantity: 4.0,
+    size: 2.0,
+    quantity: 3.0,
   });
 });

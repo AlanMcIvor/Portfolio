@@ -88,6 +88,8 @@ nav ul li:not(:last-child) {
 .home_main {
   margin-inline: 18em;
   margin-top: 8em;
+  display: flex;
+  gap: 25px;
 }
 
 span {
@@ -106,9 +108,11 @@ button {
 .main_txt {
   background-color: rgba(7, 25, 47, 0.3);
   backdrop-filter: blur(2px);
+  max-width: 60%;
 }
 .main_txt p {
   margin-bottom: 15px;
+  max-width: 75%;
 }
 
 .main_txt button {
