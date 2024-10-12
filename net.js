@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
-  VANTA.NET({
+  VANTA.BIRDS({
     el: "#home_net",
     mouseControls: true,
     touchControls: true,
@@ -8,10 +8,8 @@ window.addEventListener("DOMContentLoaded", () => {
     minWidth: 200.0,
     scale: 1.0,
     scaleMobile: 1.0,
-    color: 0xffffff,
-    backgroundColor: 0x70707,
-    points: 8.0,
-    maxDistance: 17.0,
-    spacing: 20.0,
+    color1: 0x1e00ff,
+    color2: 0xffffff,
+    quantity: 2.0,
   });
 });

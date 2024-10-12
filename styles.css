@@ -54,7 +54,7 @@ body {
 /* header */
 
 header {
-  background-color: black;
+  background-color: 0x7192f;
 }
 
 nav {
@@ -153,8 +153,6 @@ button {
 }
 
 .project_img {
-  background-color: var(--secondary);
-  padding-block: 45px;
   max-width: 75%;
 }
 
