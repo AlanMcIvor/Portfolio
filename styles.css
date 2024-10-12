@@ -173,10 +173,12 @@ button {
 .project_txt {
   margin: 0 -155px;
   padding-top: 45px;
+  background-color: rgba(7, 25, 47, 0.3);
+  backdrop-filter: blur(2px);
 }
 .project_txt a {
   color: white;
   padding-top: 10px;
-  border-bottom: 4px solid var(--highlight);
+  border-bottom: 4px solid var(--secondary);
   font-size: 1.5em;
 }
