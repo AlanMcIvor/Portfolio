@@ -3,8 +3,8 @@
 :root {
   /* colours */
   --background: #f1f4f9;
-  --secondary: #1c20f9;
-  --highlight: #801a24;
+  --secondary: #c52535;
+  --highlight: #391a80;
 }
 
 h1 {
@@ -54,7 +54,7 @@ body {
 /* header */
 
 header {
-  background-color: 0x7192f;
+  background-color: #07192f;
 }
 
 nav {
@@ -102,6 +102,10 @@ button {
   font-weight: bold;
 }
 
+.main_txt {
+  background-color: rgba(7, 25, 47, 0.3);
+  backdrop-filter: blur(2px);
+}
 .main_txt p {
   margin-bottom: 15px;
 }
