@@ -278,11 +278,15 @@ nav ul li a:hover {
   transform: scale(1.2);
 }
 
+.hide {
+  display: none;
+}
+
 /* media querys */
 
 @media screen and (max-width: 1485px) {
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .home_main {
     flex-direction: column;
@@ -309,7 +313,7 @@ nav ul li a:hover {
     position: absolute;
     right: -100%;
     top: 0;
-    height: 100dvh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -344,5 +348,22 @@ nav ul li a:hover {
   .home_main {
     margin-inline: 2em;
     margin-top: 1em;
+  }
+
+  .hamburger {
+    color: white;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+  }
+
+  .fa-bars:before {
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .hide {
+    display: block;
   }
 }
