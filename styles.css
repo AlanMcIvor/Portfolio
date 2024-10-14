@@ -245,6 +245,7 @@ textarea {
   outline: none;
   border: none;
   text-transform: capitalize;
+  color: White;
 }
 
 input::placeholder {
