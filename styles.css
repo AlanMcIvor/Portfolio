@@ -43,6 +43,9 @@ img {
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  overflow-x: hidden;
+}
 
 body {
   background-color: black;
@@ -321,6 +324,11 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
     z-index: 100;
+    transition: 250ms ease-in-out;
+  }
+
+  .showNav {
+    right: 0;
   }
 
   nav {
@@ -356,6 +364,7 @@ nav ul li a:hover {
     top: 25px;
     right: 25px;
     cursor: pointer;
+    z-index: 999;
   }
 
   .fa-bars:before {
