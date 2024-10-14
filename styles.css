@@ -132,7 +132,7 @@ button {
   transition: 300ms ease-in-out;
 }
 
-.main_txt button:not(:last-of-type) {
+a {
   margin-right: 15px;
 }
 

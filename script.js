@@ -10,6 +10,7 @@ let mobileMenu = document.querySelector(".mobileNav");
 burger.addEventListener("click", function () {
   mobileMenu.classList.toggle("showNav");
 
+  //   add or remove burger and cross icon
   if (icon.classList.contains("fa-bars")) {
     icon.classList.remove("fa-bars");
     icon.classList.add("fa-xmark");
