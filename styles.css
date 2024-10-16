@@ -147,6 +147,7 @@ a {
   margin-inline: 18em;
   margin-top: 4em;
 }
+
 .projects_main h2 {
   position: relative;
   margin-bottom: 25px;
@@ -168,10 +169,6 @@ a {
 .project {
   display: flex;
   gap: 25px;
-}
-
-.project_img {
-  max-width: 75%;
 }
 
 .project_img img {
@@ -286,6 +283,13 @@ nav ul li a:hover {
   display: none;
 }
 
+/* vanta js height and width */
+
+.vanta-canvas {
+  width: 100%;
+  height: 100%;
+}
+
 /* media querys */
 
 @media screen and (max-width: 1485px) {
@@ -309,6 +313,33 @@ nav ul li a:hover {
 
   .side_img {
     margin-bottom: 55px;
+  }
+}
+
+@media screen and (max-width: 1287px) {
+  .projects_main {
+    margin-inline: 5em;
+    margin-top: 4em;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .project_txt {
+    margin: 50px 55px;
+  }
+
+  .project_img {
+    max-width: 100%;
+  }
+
+  .project_img img {
+    max-width: 100%;
+  }
+  .contact_main {
+    margin-inline: 5em;
   }
 }
 
@@ -375,5 +406,11 @@ nav ul li a:hover {
 
   .hide {
     display: block;
+  }
+
+  @media screen and (max-width: 460px) {
+    .projects_main {
+      margin-inline: 1em;
+    }
   }
 }
