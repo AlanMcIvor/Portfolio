@@ -1,20 +1,24 @@
-// mobile menu
+// mobile navigation
 
-// dom elements
-let burger = document.querySelector(".hamburger");
+let nav = document.querySelector(".navbar");
+let burger = document.querySelector(".hamburger-icon");
+
 let icon = document.querySelector(".icon");
 
-let mobileMenu = document.querySelector(".mobileNav");
-
-// when burger menu clicked toggle nav
+// when burger is clicked show or hide nav bar
 burger.addEventListener("click", function () {
-  mobileMenu.classList.toggle("showNav");
+  // when buger is clicked show the nav and change icon colour to white
+  nav.classList.toggle("showNav");
+  burger.classList.toggle("burgerWhite");
 
-  //   add or remove burger and cross icon
-  if (icon.classList.contains("fa-bars")) {
-    icon.classList.remove("fa-bars");
+  //   if the nav class list contains teh show nav class then remove the bars and add the close icon
+  if (nav.classList.contains("showNav")) {
     icon.classList.add("fa-xmark");
-  } else {
+    icon.classList.remove("fa-bars");
+  }
+
+  //   if the nav class list does NOT contain teh show nav class then remove the close icon andf add the bars
+  if (!nav.classList.contains("showNav")) {
     icon.classList.remove("fa-xmark");
     icon.classList.add("fa-bars");
   }
